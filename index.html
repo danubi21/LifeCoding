@@ -2,38 +2,15 @@
 <html lang="ko" dir="ltr">
 
 <head>
-  <meta charset="utf-8">
   <title>Lorem Ipsum</title>
-
+  <meta charset="utf-8">
+  <script src="color.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <input type="button" value="Night mode" onclick="
-  var target = document.querySelector('body');
-  if(this.value === 'Night mode'){
-    target.style.backgroundColor='black';
-    target.style.color='white';
-    this.value = 'Day mode';
-
-    var alist = document.querySelectorAll('a');
-    var i = 0;
-    while(i < alist.length){
-      alist[i].style.color = 'powderblue';
-      i = i + 1;
-    }
-  } else {
-    target.style.backgroundColor= 'white';
-    target.style.color = 'black';
-    this.value = 'Night mode';
-
-    var alist = document.querySelectorAll('a');
-    var i = 0;
-    while(i < alist.length){
-      alist[i].style.color = 'orange';
-      i = i + 1;
-  }
-}
+nightDayHandler(this);
   ">
   <h1><a href="index.html">Lorem Ipsum</h1></a>
 
@@ -45,7 +22,7 @@
     </ol>
     <div>
       <h2>Lorem Ipsum</h2>
-      <img src="image1.jpg" height="400px">
+      <img src="images/image1.jpg" height="400px">
       <p><b><a href="https://en.wikipedia.org/wiki/Lorem_ipsum" target="blank" title="From Wikipedia">Lorem Ipsum</b></a> has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
         to make a type specimen book. </p>
       <p>It has survived not only five centuries, but also the leap into electronic

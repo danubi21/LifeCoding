@@ -2,40 +2,16 @@
 <html lang="ko" dir="ltr">
 
 <head>
-  <meta charset="utf-8">
   <title>Where does it come from?</title>
-
+  <meta charset="utf-8">
+  <script src="color.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <input type="button" value="Night mode" onclick="
-  var target = document.querySelector('body');
-  if(this.value === 'Night mode'){
-    target.style.backgroundColor='black';
-    target.style.color='white';
-    this.value = 'Day mode';
-
-    var alist = document.querySelectorAll('a');
-    var i = 0;
-    while(i < alist.length){
-      alist[i].style.color = 'powderblue';
-      i = i + 1;
-    }
-  } else {
-    target.style.backgroundColor= 'white';
-    target.style.color = 'black';
-    this.value = 'Night mode';
-
-    var alist = document.querySelectorAll('a');
-    var i = 0;
-    while(i < alist.length){
-      alist[i].style.color = 'orange';
-      i = i + 1;
-  }
-}
+nightDayHandler(this);
   ">
-
   <h1><a href="index.html">Lorem Ipsum</h1></a>
   <div id="grid">
     <ol>
@@ -44,7 +20,7 @@
       <li><a href="3.html">Where can I get some?</li></a>
     </ol>
     <div><br>
-      <img src="image3.jpg" height="400px">
+      <img src="images/image3.jpg" height="400px">
       <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia,
         looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
       <p>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The
